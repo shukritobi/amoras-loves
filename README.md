@@ -1,1 +1,5 @@
-# amoras-loves
+# Amora’s Loves
+
+Responsive storefront using the verified public WooCommerce catalogue. GitHub Pages is a visual storefront only; CHIP payments are disabled until Cloudflare Worker deployment, D1 setup, merchant-approved shipping rates and successful Test Mode validation. Never commit API keys. Backend source: `backend/worker.mjs`; schema: `backend/schema.sql`. Set CHIP_API_KEY, CHIP_BRAND_ID, STORE_ORIGIN, SHIPPING_RATES and PAYMENT_ENABLED via server configuration. Before production: add webhook signature verification, refund reconciliation, checkout idempotency, rate limiting, authenticated admin and fulfillment, privacy and retention rules. The 15% commission ledger is not an automatic payout. Merchant-owned CHIP account and separate invoicing are recommended unless CHIP approves a split arrangement.
+
+Media: run `python -m pip install Pillow` and `python scripts/import-media.py` or use the Localize brand media workflow to download original assets as WebP. Confirm permission before commercial launch. Verify desktop/mobile, every image, checkout, catalog prices, shipping and current brownie/Dubai Chewy Cookie listings before outreach. Search indexing disabled until authorized launch.
